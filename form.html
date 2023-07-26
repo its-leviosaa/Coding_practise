@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form by HTML</title>
+</head>
+<body>
+    <!--KOI ACtion.php naam ki file hogi jo humare backend mein iss form ke data ko process kar rahi hogi ki humne lgin kiya h toh saari information sahi daala h ya nhi-->   
+    <form action="/action.php">
+        <!--placeholder mean ki agar aap kuchh bhi nhi likhenge toh yaha pe ye chij already likhi hui hogi-->
+        <!-- jaise hi hum uss box mein type karna shuru karenge background text will be gone-->
+        <!--Text type ka jab hum input lete h tab hum koi bhi text likh pate h iss box mein-->
+        <input type="text" placeholder="Enter username" />
+        <br>
+        <!--br use karna hoga kyunki bina use kiye sab vhij ek hi line mein aa gay h-->
+        <input type="text" placeholder="Enter password" />
+        <br>
+        <!--Now if we will put type as password then we won't be able to see what we are writing there keys press hongi but dikhega nhi-->
+        <input type="password" placeholder="Enter new password" />
+        <br>
+        <h3><b>LABELS</b></h3>
+        <br>
+        <input type="radio" value="class XI" name="class">class XI
+        <input type="radio" value="class XII" name="class">class XII
+        <br>
+        <br><!--do baar likhne se 2 next line-->
+        <!--ye tin line likhne se humare pass 3 button aa gaye h unme se hum ek hi select kar paayenge , yahi radio button ki speciality ki hum ek baar mein ek hi click kar sakte h not multiple options-->
+        <!--let's put all the radio button inside a label-->
+        <label for="101">
+            <input type="radio" value="class X" name="class" id="101">class X
+        </label>
+        <label for="102">
+            <input type="radio" value="class X" name="class" id="102">class X
+        </label>
+        <label for="103">
+            <input type="radio" value="class XI" name="class" id="103">class XI
+        </label>
+        <br>
+        <!--in above name attribute ka value same h let's see why-->
+        <h3><b><i>Checkbox understanding</i></b></h3>
+        <label for="maths">
+            <input type="checkbox" value="maths" name="Subject" id="90">maths
+        </label>
+        <br>
+        <!--Similarly we are creating more checkbox-->
+        <label for="physics">
+            <input type="checkbox" value="physics" name="Subject" id="91">physics
+        </label>
+        <br>
+        <label for="chemistry">
+            <input type="checkbox" value="chemistry" name="Subject" id="92">chemistry
+        </label>
+        <br>
+        <label for="biology">
+            <input type="checkbox" value="biology" name="Subject" id="93">biology
+        </label>
+        <br>
+        <label for="english">
+            <input type="checkbox" value="english" name="Subject" id="94">english
+        </label>
+        <h3><b><i>Textarea</i></b></h3>
+        <br>
+        <textarea name="feedback" id="100" placeholder="Add your valuable Feedback">feedback
+        </textarea>
+        <br>
+        <!--box mein feedback jo naam last mein likhe h line66 mein pehle se likha hoga-->
+        <!--resizing textbox rows-->
+        <textarea name="feedback" id="101" placeholder="valuable Feedback" rows="5">feedback
+        </textarea>
+        <!--5 rows ke barabar space mil gaya likhne ke liye-->
+        <h3><b><i>SELECT</i></b></h3>
+        <select name="city" id="city">
+            <option value="Delhi">Delhi</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Pune">Pune</option>
+        </select>
+    </form>
+</body>
+</html>
